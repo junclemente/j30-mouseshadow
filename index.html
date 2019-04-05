@@ -41,15 +41,18 @@
 
 
   function shadow(e) {
-    const width = hero.offsetWidth;
-    const height = hero.offsetHeight;
-    // const { offsetWidth: width, offsetHeight: height } = hero;
 
+    // const width = hero.offsetWidth;
+    // const height = hero.offsetHeight;
+
+    // The one line below is a shorthand way of doing assigning values in ES6.
+    const { offsetWidth: width, offsetHeight: height } = hero;
     let { offsetX: x, offsetY: y } = e;
 
-    console.log(x, y);
-
-    // console.log(e);
+    if (this !== e.target) {
+      x = x + e.target.offsetLeft;
+      y = y + e.target.offsetTop;
+    }
   }
 
   hero.addEventListener('mousemove', shadow);
