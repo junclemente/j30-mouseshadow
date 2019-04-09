@@ -12,4 +12,4 @@ This project is a practice in writing vanilla JavaScript and to learn about othe
 
 
 #### Project takeaways
-* `this` vs `e.target` - `this` is referencing the object in the eventListener, ie: `hero.addEventListener('mousemouve', shadow)`. In this example, `e.target` is referencing the child of `.hero` therefore, the value shown is close to (0, 0) when in the top-left corner of the `h1`. 
+* `this` vs `e.target` - `this` is referencing the object in the eventListener (the thing that you listened on), ie: `hero.addEventListener('mousemouve', shadow)`. In this example, `e.target` is referencing the child of `.hero` (the thing that you triggered on) therefore, the value shown is close to (0, 0) when in the top-left corner of the `h1`.
