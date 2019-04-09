@@ -13,3 +13,4 @@ This project is a practice in writing vanilla JavaScript and to learn about othe
 
 #### Project takeaways
 * `this` vs `e.target` - `this` is referencing the object in the eventListener (the thing that you listened on), ie: `hero.addEventListener('mousemouve', shadow)`. In this example, `e.target` is referencing the child of `.hero` (the thing that you triggered on) therefore, the value shown is close to (0, 0) when in the top-left corner of the `h1`.
+* `offsetLeft`, `offsetTop`, `offsetWidth`, `offsetHeight`- These values can be used to grab the mouse location and then added, subtracted or combined in any which way to do other types of manipulations. 
